@@ -50,6 +50,10 @@ const Pricing = () => {
                 <p className="text-gray-400 max-w-xl mx-auto">
                     Start for free, upgrade when you need to scaling power. No hidden fees.
                 </p>
+                <div className="mt-4 flex items-center justify-center gap-2 text-sm text-gray-400">
+                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+                    Secure payments via Razorpay. Services charged hourly.
+                </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start max-w-7xl mx-auto">
