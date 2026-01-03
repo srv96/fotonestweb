@@ -62,7 +62,7 @@ const Hero = () => {
                     <div className="hidden md:block w-full h-full">
                         {[
                             { text: "Shared Smiles", icon: <Smile className="w-4 h-4 text-yellow-400" />, x: "10%", y: "20%", scale: 1.1, delay: 0 },
-                            { text: "Smart Discovery", icon: <Sparkles className="w-4 h-4 text-blue-400" />, x: "65%", y: "15%", scale: 1.2, delay: 1 },
+                            { text: "Smart Discovery", icon: <Sparkles className="w-4 h-4 text-blue-400" />, x: "65%", y: "20%", scale: 1.2, delay: 1 },
                             { text: "Precision AI", icon: <ScanFace className="w-4 h-4 text-purple-400" />, x: "40%", y: "45%", scale: 1.3, delay: 2 },
                             { text: "Instant Match", icon: <Zap className="w-4 h-4 text-yellow-300" />, x: "15%", y: "55%", scale: 1.0, delay: 1.5 },
                             { text: "Privacy First", icon: <ShieldCheck className="w-4 h-4 text-green-400" />, x: "75%", y: "65%", scale: 1.1, delay: 0.5 },
@@ -70,8 +70,8 @@ const Hero = () => {
                             { text: "No Data Loss", icon: <Cloud className="w-4 h-4 text-cyan-400" />, x: "25%", y: "80%", scale: 1.05, delay: 3 },
                             { text: "One-Click Save", icon: <Download className="w-4 h-4 text-indigo-400" />, x: "55%", y: "85%", scale: 1.0, delay: 1.2 },
                             { text: "Anytime Access", icon: <Globe className="w-4 h-4 text-blue-300" />, x: "5%", y: "40%", scale: 0.9, delay: 2.8 },
-                            { text: "Effortless Sharing", icon: <Share2 className="w-4 h-4 text-pink-400" />, x: "85%", y: "50%", scale: 1.15, delay: 0.8 },
-                            { text: "Trusted Platform", icon: <BadgeCheck className="w-4 h-4 text-emerald-400" />, x: "35%", y: "10%", scale: 0.95, delay: 3.5 },
+                            { text: "Effortless Sharing", icon: <Share2 className="w-4 h-4 text-pink-400" />, x: "65%", y: "50%", scale: 1.15, delay: 0.8 },
+                            { text: "Trusted Platform", icon: <BadgeCheck className="w-4 h-4 text-emerald-400" />, x: "35%", y: "15%", scale: 0.95, delay: 3.5 },
                             { text: "Zero Lag", icon: <Rocket className="w-4 h-4 text-orange-400" />, x: "50%", y: "65%", scale: 1.1, delay: 1.8 },
                         ].map((item, i) => (
                             <motion.div
@@ -106,15 +106,15 @@ const Hero = () => {
                     {/* Mobile Layout (Optimized) */}
                     <div className="block md:hidden w-full h-full">
                         {[
-                            { text: "Shared Smiles", icon: <Smile className="w-3 h-3 text-yellow-400" />, x: "5%", y: "5%", scale: 0.9, delay: 0 },
-                            { text: "Smart Discovery", icon: <Sparkles className="w-3 h-3 text-blue-400" />, x: "45%", y: "15%", scale: 1.0, delay: 1 },
-                            { text: "Precision AI", icon: <ScanFace className="w-3 h-3 text-purple-400" />, x: "10%", y: "25%", scale: 1.0, delay: 2 },
-                            { text: "Instant Match", icon: <Zap className="w-3 h-3 text-yellow-300" />, x: "55%", y: "35%", scale: 0.9, delay: 1.5 },
-                            { text: "Privacy First", icon: <ShieldCheck className="w-3 h-3 text-green-400" />, x: "5%", y: "45%", scale: 0.95, delay: 0.5 },
-                            { text: "Secure Vault", icon: <Lock className="w-3 h-3 text-red-400" />, x: "50%", y: "55%", scale: 0.8, delay: 2.5 },
-                            { text: "No Data Loss", icon: <Cloud className="w-3 h-3 text-cyan-400" />, x: "15%", y: "65%", scale: 0.9, delay: 3 },
-                            { text: "One-Click Save", icon: <Download className="w-3 h-3 text-indigo-400" />, x: "60%", y: "75%", scale: 0.85, delay: 1.2 },
-                            { text: "Anytime Access", icon: <Globe className="w-3 h-3 text-blue-300" />, x: "5%", y: "85%", scale: 0.8, delay: 2.8 },
+                            { text: "Shared Smiles", icon: <Smile className="w-3 h-3 text-yellow-400" />, x: "15%", y: "5%", scale: 0.9, delay: 0 },
+                            { text: "Smart Discovery", icon: <Sparkles className="w-3 h-3 text-blue-400" />, x: "55%", y: "15%", scale: 1.0, delay: 1 },
+                            { text: "Precision AI", icon: <ScanFace className="w-3 h-3 text-purple-400" />, x: "30%", y: "25%", scale: 1.0, delay: 2 },
+                            { text: "Instant Match", icon: <Zap className="w-3 h-3 text-yellow-300" />, x: "5%", y: "40%", scale: 0.9, delay: 1.5 },
+                            { text: "Privacy First", icon: <ShieldCheck className="w-3 h-3 text-green-400" />, x: "65%", y: "35%", scale: 0.95, delay: 0.5 },
+                            { text: "Secure Vault", icon: <Lock className="w-3 h-3 text-red-400" />, x: "35%", y: "50%", scale: 0.8, delay: 2.5 },
+                            { text: "No Data Loss", icon: <Cloud className="w-3 h-3 text-cyan-400" />, x: "70%", y: "60%", scale: 0.9, delay: 3 },
+                            { text: "One-Click Save", icon: <Download className="w-3 h-3 text-indigo-400" />, x: "10%", y: "65%", scale: 0.85, delay: 1.2 },
+                            { text: "Anytime Access", icon: <Globe className="w-3 h-3 text-blue-300" />, x: "40%", y: "75%", scale: 0.8, delay: 2.8 },
                             // Reduced items for cleanliness
                             { text: "Trusted Platform", icon: <BadgeCheck className="w-3 h-3 text-emerald-400" />, x: "55%", y: "85%", scale: 0.85, delay: 3.5 },
                         ].map((item, i) => (

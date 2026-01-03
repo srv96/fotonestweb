@@ -10,27 +10,35 @@ const Pricing = () => {
 
     const plans = [
         {
-            name: "Starter",
-            price: "₹499",
-            period: "/event",
-            description: "Perfect for single-day events.",
-            features: ["1 Day Duration", "Up to 500 Guests", "Basic AI Discovery", "Standard Support"],
+            name: "Small",
+            price: "₹12",
+            period: "/hour",
+            description: "For intimate gatherings.",
+            features: ["Handle up to 500 Photos", "2-3 Guests at a time", "Standard Support"],
             highlight: false
         },
         {
-            name: "Professional",
-            price: "₹799",
-            period: "/event",
-            description: "Our most popular plan for weddings & parties.",
-            features: ["3 Days Duration", "Up to 2000 Guests", "Priority AI Processing", "Branded Watermarks", "Email Support"],
+            name: "Normal",
+            price: "₹17",
+            period: "/hour",
+            description: "Best for weddings & parties.",
+            features: ["Handle up to 1000 Photos", "4-6 Guests at a time", "Priority Support"],
             highlight: true
         },
         {
-            name: "Enterprise",
-            price: "₹1499",
-            period: "/week",
-            description: "For festivals and multi-day conferences.",
-            features: ["7 Days Duration", "Unlimited Guests", "Custom Branding", "dedicated Account Manager", "API Access"],
+            name: "Large",
+            price: "₹25",
+            period: "/hour",
+            description: "For corporate events.",
+            features: ["Handle up to 2000 Photos", "10-12 Guests at a time", "Priority Support"],
+            highlight: false
+        },
+        {
+            name: "X-Large",
+            price: "₹40",
+            period: "/hour",
+            description: "For massive festivals.",
+            features: ["Handle up to 4000 Photos", "22-24 Guests at a time", "Account Manager"],
             highlight: false
         }
     ];
@@ -44,17 +52,17 @@ const Pricing = () => {
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start max-w-7xl mx-auto">
                 {plans.map((plan, idx) => (
                     <GlassCard
                         key={idx}
                         className={cn(
                             "p-8 transition-transform duration-300",
-                            plan.highlight ? "border-primary-500/50 shadow-[0_0_40px_rgba(59,130,246,0.1)] scale-105 z-10 relative" : "opacity-80 hover:opacity-100 hover:scale-105"
+                            plan.highlight ? "border-primary-500/50 shadow-[0_0_40px_rgba(59,130,246,0.1)] bg-white/10 z-10 relative" : "opacity-80 hover:opacity-100 hover:scale-[1.02]"
                         )}
                     >
                         {plan.highlight && (
-                            <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gradient-primary px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-lg whitespace-nowrap">
                                 Most Popular
                             </div>
                         )}
